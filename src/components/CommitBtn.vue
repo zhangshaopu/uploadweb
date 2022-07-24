@@ -33,7 +33,7 @@ export default {
 
     mounted(){//监听Upload组件传来的信息
       this.$bus.$on('getOriginMsg',(originMsg)=>{
-        console.log("btn接收到的originMsg:",originMsg);
+        console.log("commitbtn接收到的originMsg:",originMsg);
         this.originUrl = originMsg.url;
         this.fileName = originMsg.name;
         console.log("testurl:",this.originUrl);
